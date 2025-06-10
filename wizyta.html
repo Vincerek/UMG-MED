@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Services</title>
+    <link rel="stylesheet" href="styles/wizyta.css">
+</head>
+<body>
+    <div class="banner">
+        <a href="main.html">Strona główna</a>
+        <a href="wizyta.html">Umów wizytę</a>
+        <a href="lekarze.html">Nasi lekarze</a>
+        <a href="aboutus.html">Placówki</a>
+        <a href="yourprofile.html">Szpitale</a>
+        <a href="contact.html">Kontakt</a>
+    </div>
+
+    <div class="container">
+        <h1>Wybierz Usługę Medyczną</h1>
+        
+        <div class="services-grid">
+            <div class="service-card" onclick="openPopup('cardiology')">
+                <span class="service-icon">❤️</span>
+                <h3>Kardiologia</h3>
+                <p>Kompleksowa opieka nad sercem i układem krążenia</p>
+            </div>
+
+            <div class="service-card" onclick="openPopup('dermatology')">
+                <span class="service-icon">🩺</span>
+                <h3>Dermatologia</h3>
+                <p>Diagnostyka i leczenie chorób skóry</p>
+            </div>
+
+            <div class="service-card" onclick="openPopup('neurology')">
+                <span class="service-icon">🧠</span>
+                <h3>Neurologia</h3>
+                <p>Specjalistyczna opieka neurologiczna</p>
+            </div>
+
+            <div class="service-card" onclick="openPopup('orthopedics')">
+                <span class="service-icon">🦴</span>
+                <h3>Ortopedia</h3>
+                <p>Leczenie chorób układu ruchu</p>
+            </div>
+
+            <div class="service-card" onclick="openPopup('pediatrics')">
+                <span class="service-icon">👶</span>
+                <h3>Pediatria</h3>
+                <p>Opieka zdrowotna dla dzieci</p>
+            </div>
+
+            <div class="service-card" onclick="openPopup('gynecology')">
+                <span class="service-icon">🌸</span>
+                <h3>Ginekologia</h3>
+                <p>Zdrowie kobiet i opieka ginekologiczna</p>
+            </div>
+
+            <div class="service-card" onclick="openPopup('ophthalmology')">
+                <span class="service-icon">👁️</span>
+                <h3>Okulistyka</h3>
+                <p>Diagnostyka i leczenie chorób oczu</p>
+            </div>
+
+            <div class="service-card" onclick="openPopup('dentistry')">
+                <span class="service-icon">🦷</span>
+                <h3>Stomatologia</h3>
+                <p>Kompleksowa opieka stomatologiczna</p>
+            </div>
+
+            <div class="service-card" onclick="openPopup('general')">
+                <span class="service-icon">⚕️</span>
+                <h3>Medycyna Ogólna</h3>
+                <p>Podstawowa opieka zdrowotna</p>
+            </div>
+        </div>
+    </div>
+
+<div class="popup-overlay" id="popup-overlay" style="display:none;">
+    <div class="popup-content" id="popup-content"></div>
+</div>
+
+<footer>
+    <h2>O nas</h2>
+    <p>UMG-MED jest placówką medyczną, która dominuje rynek oferując najlepszą możliwą opiękę medyczną.</p>
+
+    <p>Jeśli masz jakieś pytania, skontaktuj się z nami pod adresem <a href="mailto:umg-med@gmail.com">umg-med@gmail.com</a>!</p>
+    <h2>Wykonał</h2>
+    <p>Filip Jurczuk</p>
+</footer>
+
+<script src="js/wizyty.js"></script>
+</body>
